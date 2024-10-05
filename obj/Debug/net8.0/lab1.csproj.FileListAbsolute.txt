@@ -112,3 +112,4 @@ D:\LABY\LABY 4 KURS\Архітектура\lab1\bin\Debug\net8.0\zh-Hant\Microso
 D:\LABY\LABY 4 KURS\Архітектура\lab1\obj\Debug\net8.0\lab1.csproj.AssemblyReference.cache
 D:\LABY\LABY 4 KURS\Архітектура\lab1\obj\Debug\net8.0\lab1.MvcApplicationPartsAssemblyInfo.cs
 D:\LABY\LABY 4 KURS\Архітектура\lab1\obj\Debug\net8.0\lab1.csproj.Up2Date
+D:\LABY\LABY 4 KURS\Архітектура\lab1\obj\Debug\net8.0\lab1.sourcelink.json

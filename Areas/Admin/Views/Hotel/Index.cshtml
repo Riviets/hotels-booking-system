@@ -1,0 +1,60 @@
+@model lab1.ViewModels.AppViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels</title>
+    <link rel="stylesheet" href="~/css/styles.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+           <div class="header__inner">
+             <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="#" class="header__link">Готелі</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Адміністратор</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__buttons">
+                <a href="#" id="login-btn" class="login-btn btn">Login</a>
+                <a href="#" id="signup-btn" class="signup-btn btn">Signup</a>
+            </div>
+           </div>
+        </div>
+    </header>
+    <section class="hotels-section">
+        <div class="container">
+            <h1 class="hotels__title title">Hotels</h1>
+            <ul class="hotels__items">
+                @foreach(var Hotel in Model.Hotels)
+                {
+                    <li class="hotels__item">
+                        <h2 class="hotels__item-name">@Hotel.Name</h2>
+                        <div class="hotels__item-content">
+                            <img src="~/images/hotel.jpg" alt="Hotel Image" class="hotels__item-img">
+                            <div class="hotels__item-info">
+                                <p class="hotels__item-description">
+                                    @Hotel.Description
+                                </p>
+                                <p class="hotels__item-location">
+                                    @Hotel.Location
+                                </p>
+                                <p class="hotels__item-rating">
+                                    @Hotel.Rating
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                }
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

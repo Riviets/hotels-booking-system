@@ -18,8 +18,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\LABY\LABY 4 KURS\Архітектура\lab1
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/LABY/LABY 4 KURS/Архітектура/lab1/Areas/Hotel/Views/Home/index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSG90ZWxcVmlld3NcSG9tZVxpbmRleC5jc2h0bWw=
+[D:/LABY/LABY 4 KURS/Архітектура/lab1/Areas/Admin/Views/Hotel/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG90ZWxcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/LABY/LABY 4 KURS/Архітектура/lab1/Pages/Error.cshtml]

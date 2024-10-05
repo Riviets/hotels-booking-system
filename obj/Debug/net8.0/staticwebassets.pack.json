@@ -5,12 +5,56 @@
       "PackagePath": "staticwebassets\\lab1.bundle.scp.css"
     },
     {
+      "Id": "D:\\LABY\\LABY 4 KURS\\Архітектура\\lab1\\wwwroot\\css\\header.css",
+      "PackagePath": "staticwebassets\\css\\header.css"
+    },
+    {
+      "Id": "D:\\LABY\\LABY 4 KURS\\Архітектура\\lab1\\wwwroot\\css\\header.css.map",
+      "PackagePath": "staticwebassets\\css\\header.css.map"
+    },
+    {
+      "Id": "D:\\LABY\\LABY 4 KURS\\Архітектура\\lab1\\wwwroot\\css\\header.scss",
+      "PackagePath": "staticwebassets\\css\\header.scss"
+    },
+    {
+      "Id": "D:\\LABY\\LABY 4 KURS\\Архітектура\\lab1\\wwwroot\\css\\hotels.css",
+      "PackagePath": "staticwebassets\\css\\hotels.css"
+    },
+    {
+      "Id": "D:\\LABY\\LABY 4 KURS\\Архітектура\\lab1\\wwwroot\\css\\hotels.css.map",
+      "PackagePath": "staticwebassets\\css\\hotels.css.map"
+    },
+    {
+      "Id": "D:\\LABY\\LABY 4 KURS\\Архітектура\\lab1\\wwwroot\\css\\hotels.scss",
+      "PackagePath": "staticwebassets\\css\\hotels.scss"
+    },
+    {
       "Id": "D:\\LABY\\LABY 4 KURS\\Архітектура\\lab1\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "D:\\LABY\\LABY 4 KURS\\Архітектура\\lab1\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
+      "Id": "D:\\LABY\\LABY 4 KURS\\Архітектура\\lab1\\wwwroot\\css\\styles.css.map",
+      "PackagePath": "staticwebassets\\css\\styles.css.map"
+    },
+    {
+      "Id": "D:\\LABY\\LABY 4 KURS\\Архітектура\\lab1\\wwwroot\\css\\styles.scss",
+      "PackagePath": "staticwebassets\\css\\styles.scss"
+    },
+    {
       "Id": "D:\\LABY\\LABY 4 KURS\\Архітектура\\lab1\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\LABY\\LABY 4 KURS\\Архітектура\\lab1\\wwwroot\\images\\hotel.jpg",
+      "PackagePath": "staticwebassets\\images\\hotel.jpg"
+    },
+    {
+      "Id": "D:\\LABY\\LABY 4 KURS\\Архітектура\\lab1\\wwwroot\\images\\room.jpg",
+      "PackagePath": "staticwebassets\\images\\room.jpg"
     },
     {
       "Id": "D:\\LABY\\LABY 4 KURS\\Архітектура\\lab1\\wwwroot\\js\\site.js",
