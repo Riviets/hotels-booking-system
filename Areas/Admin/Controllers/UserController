@@ -1,0 +1,98 @@
+using Microsoft.AspNetCore.Mvc;
+using lab1.Models;
+using lab1.ViewModels;
+using lab1.Repositories.Interfaces; // Підключення до інтерфейсу репозиторію
+using System.Linq;
+
+namespace lab1.Areas.Admin.Controllers
+{
+    [Area("Admin")]
+    public class UserController : Controller
+    {
+        private readonly IUserRepository _userRepository;
+
+        public UserController(IUserRepository userRepository)
+        {
+            _userRepository = userRepository;
+        }
+
+        // GET: Admin/User
+        public IActionResult Index()
+        {
+            var users = _userRepository.GetAll().ToList();
+            var viewModel = new AppViewModel
+            {
+                Users = users
+            };
+            return View(viewModel);
+        }
+
+        // GET: Admin/User/Create
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        // POST: Admin/User/Create
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(User user)
+        {
+            if (ModelState.IsValid)
+            {
+                _userRepository.Add(user);
+                return RedirectToAction(nameof(Index));
+            }
+            return View(user);
+        }
+
+        // GET: Admin/User/Edit/{id}
+        public IActionResult Edit(int id)
+        {
+            var user = _userRepository.GetById(id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            return View(user);
+        }
+
+        // POST: Admin/User/Edit/{id}
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(int id, User user)
+        {
+            if (id != user.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                _userRepository.Update(user);
+                return RedirectToAction(nameof(Index));
+            }
+            return View(user);
+        }
+
+        // GET: Admin/User/Delete/{id}
+        public IActionResult Delete(int id)
+        {
+            var user = _userRepository.GetById(id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            return View(user);
+        }
+
+        // POST: Admin/User/Delete/{id}
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeleteConfirmed(int id)
+        {
+            _userRepository.Delete(id);
+            return RedirectToAction(nameof(Index));
+        }
+    }
+}

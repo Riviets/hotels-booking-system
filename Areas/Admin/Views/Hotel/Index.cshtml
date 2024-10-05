@@ -11,45 +11,44 @@
 <body>
     <header class="header">
         <div class="container">
-           <div class="header__inner">
-             <nav class="header__nav">
-                <ul class="header__list">
-                    <li class="header__item">
-                        <a href="#" class="header__link">Готелі</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link">Адміністратор</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="header__buttons">
-                <a href="#" id="login-btn" class="login-btn btn">Login</a>
-                <a href="#" id="signup-btn" class="signup-btn btn">Signup</a>
+            <div class="header__inner">
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#" class="header__link">Готелі</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Адміністратор</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__buttons">
+                    <a href="#" id="login-btn" class="login-btn btn">Login</a>
+                    <a href="#" id="signup-btn" class="signup-btn btn">Signup</a>
+                </div>
             </div>
-           </div>
         </div>
     </header>
     <section class="hotels-section">
         <div class="container">
             <h1 class="hotels__title title">Hotels</h1>
+            <a href="@Url.Action("Create", "Hotel", new { area = "Admin" })" class="btn">Додати новий готель</a>
             <ul class="hotels__items">
-                @foreach(var Hotel in Model.Hotels)
+                @foreach (var hotel in Model.Hotels)
                 {
                     <li class="hotels__item">
-                        <h2 class="hotels__item-name">@Hotel.Name</h2>
+                        <h2 class="hotels__item-name">@hotel.Name</h2>
                         <div class="hotels__item-content">
                             <img src="~/images/hotel.jpg" alt="Hotel Image" class="hotels__item-img">
                             <div class="hotels__item-info">
-                                <p class="hotels__item-description">
-                                    @Hotel.Description
-                                </p>
-                                <p class="hotels__item-location">
-                                    @Hotel.Location
-                                </p>
-                                <p class="hotels__item-rating">
-                                    @Hotel.Rating
-                                </p>
+                                <p class="hotels__item-description">@hotel.Description</p>
+                                <p class="hotels__item-location">@hotel.Location</p>
+                                <p class="hotels__item-rating">@hotel.Rating</p>
                             </div>
+                        </div>
+                        <div class="hotels__item-actions">
+                            <a href="@Url.Action("Edit", "Hotel", new { area = "Admin", id = hotel.Id })" class="btn">Редагувати</a>
+                            <a href="@Url.Action("Delete", "Hotel", new { area = "Admin", id = hotel.Id })" class="btn">Видалити</a>
                         </div>
                     </li>
                 }
